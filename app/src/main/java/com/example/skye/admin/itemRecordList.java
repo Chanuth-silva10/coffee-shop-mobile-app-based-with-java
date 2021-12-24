@@ -288,8 +288,7 @@ public class itemRecordList extends AppCompatActivity {
             byte[] image = cursor.getBlob(5);
 
             mList.add(new itemModel(id,itemName,itemCategory,itemSellPrice,itemDescription,image));
-            Log.d("workflow",cursor.getString(4));
-            Log.d("workflow",cursor.getString(3));
+
         }
         mAdapter.notifyDataSetChanged();
 

@@ -136,24 +136,27 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public long addUser(String useremail, String userpwd) //enter all the parameter to be added to DB
+    public long addUser(String userEmail, String userPwd) //enter all the parameter to be added to DB
     {
         Log.d("workflow", "Inside DB addItems method Called");
 
         SQLiteDatabase db = getWritableDatabase();// get the data repository in writable mode
 
         ContentValues values = new ContentValues();  //create a new map of values , where column names the key
-        values.put(UserMaster.UserT.COLUMN_Uemail,useremail);
-        values.put(UserMaster.UserT.COLUMN_Upassword,userpwd);
+        values.put(UserMaster.UserT.COLUMN_Uemail,userEmail);
+        values.put(UserMaster.UserT.COLUMN_Upassword,userPwd);
        // values.put(UserMaster.UserT.COLUMN_Urole,userrole);
 
-        long newRowID = db.insert(ItemMaster.ItemsT.TABLE_NAME, null, values); //Insert a new row and returning the primary
+        long newRowID = db.insert(UserMaster.UserT.TABLE_NAME, null, values); //Insert a new row and returning the primary
         //key values of the new row
 
         Log.d("workflow", "DB addItem method Called finished");
 
         return newRowID;
     }
+
+
+
 
 
 }

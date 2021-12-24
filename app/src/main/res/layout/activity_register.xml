@@ -8,94 +8,111 @@ android:layout_height="match_parent"
 android:background="@drawable/login_bg"
 tools:context=".register">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="35dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="35dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="60dp">
 
-    <EditText
-        android:id="@+id/useremail"
-        android:layout_width="303dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp"
-        android:background="@drawable/edit_btn"
-        android:ems="10"
-        android:hint="User Email"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:textColor="@color/black_60"
-        android:textColorHint="@color/black_60"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/useremail"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98dp"
+            android:background="@drawable/edit_btn"
+            android:ems="10"
+            android:hint="User Email"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black_60"
+            android:textColorHint="@color/black_60"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/userpwd"
-        android:layout_width="301dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/useremail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:background="@drawable/edit_btn"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="User Password"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:textColor="@color/black_60"
-        android:textColorHint="@color/black_60"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/userpwd"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/useremail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_btn"
+            android:ems="10"
+            android:hint="User Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black_60"
+            android:textColorHint="@color/black_60"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/userCpwd"
-        android:layout_width="301dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/userpwd"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:background="@drawable/edit_btn"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Confirm Password"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:textColor="@color/black_60"
-        android:textColorHint="@color/black_60"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/userCpwd"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userpwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_btn"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black_60"
+            android:textColorHint="@color/black_60"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/userrole"
-        android:layout_width="299dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/userCpwd"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:background="@drawable/edit_btn"
-        android:ems="10"
-        android:hint="User Role"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:textColor="@color/black_60"
-        android:textColorHint="@color/black_60"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/userrole"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userCpwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_btn"
+            android:ems="10"
+            android:hint="User Role"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black_60"
+            android:textColorHint="@color/black_60"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnAdd"
-        style="@style/Animation.Design.BottomSheetDialog"
-        android:layout_width="297dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/userrole"
-        android:layout_alignStart="@+id/userrole"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="56dp"
-        android:background="@color/light_blue"
-        android:minWidth="160dp"
-        android:onClick="addUser"
-        android:text="Sign IN"
-        android:textColor="@color/black_60" />
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Animation.Design.BottomSheetDialog"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userrole"
+            android:layout_alignStart="@+id/userrole"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="56dp"
+            android:background="@color/light_blue"
+            android:minWidth="160dp"
+            android:onClick="addUser"
+            android:text="Sign IN"
+            android:textColor="@color/black_60" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="306dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/btnAdd"
+            android:layout_alignStart="@+id/btnAdd"
+            android:layout_alignEnd="@+id/btnAdd"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginEnd="-43dp"
+            android:onClick="login"
+            android:text="Already a Member? Login"
+            android:textColor="@color/black_60"
+            android:textSize="20sp" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

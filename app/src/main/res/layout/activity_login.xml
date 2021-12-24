@@ -14,7 +14,7 @@
 
 
         <EditText
-            android:id="@+id/itemDescription"
+            android:id="@+id/loginemailtxt"
             android:layout_width="301dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -29,10 +29,10 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/itemSellPrice"
+            android:id="@+id/loginpwdtxt"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/itemDescription"
+            android:layout_below="@id/loginemailtxt"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="38dp"
             android:background="@drawable/edit_btn"
@@ -40,6 +40,7 @@
             android:hint="Password"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
+            android:onClick="checkUser"
             android:paddingLeft="20dp"
             android:textColor="@color/black_60"
             android:textColorHint="@color/black_60"
@@ -50,14 +51,30 @@
             style="@style/Animation.Design.BottomSheetDialog"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/itemSellPrice"
-            android:layout_alignStart="@+id/itemSellPrice"
+            android:layout_below="@+id/loginpwdtxt"
+            android:layout_alignStart="@+id/loginpwdtxt"
             android:layout_marginStart="2dp"
             android:layout_marginTop="64dp"
             android:background="@color/light_blue"
             android:minWidth="160dp"
+            android:onClick="checkUser"
             android:text="Login"
             android:textColor="@color/black_60" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="253dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/btnAdd"
+            android:layout_alignStart="@+id/btnAdd"
+            android:layout_alignEnd="@+id/btnAdd"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="22dp"
+            android:onClick="register"
+            android:text="No account yet? Create One"
+            android:textColor="@color/black_60"
+            android:textSize="20sp" />
 
 
     </RelativeLayout>
